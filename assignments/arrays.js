@@ -77,9 +77,10 @@ console.log(`Last car in the inventory is a ${inventory[inventory.length-1].car_
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
 for (let i = 0; i < inventory.length; i++) {
-    inventory.sort();
-    console.log(inventory[i].car_model);
+    carModels.push(inventory[i]['car_model']);
 }
+carModels.sort();
+console.log(carModels);
 
 
 // ==== Challenge 4 ====
@@ -110,7 +111,5 @@ for (let i = 0; i < inventory.length; i++) {
 }
 
 console.log(JSON.stringify(BMWAndAudi));
-
-
 
 
